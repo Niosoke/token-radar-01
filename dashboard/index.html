@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Token Radar: pre-token protocols ranked by implied value</title>
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<a class="skip" href="#board">Skip to the board</a>
+<header class="masthead">
+  <div class="wrap">
+    <p class="kicker">Token launch radar &middot; model radar-2</p>
+    <h1>Which protocol should you farm next?</h1>
+    <p class="lede">Every protocol DefiLlama tracks that records no token yet, ranked by what
+    its launch would be worth &mdash; and the exact steps to farm each one. Implied
+    values are this radar&rsquo;s own claim, worked out from the snapshot&rsquo;s figures,
+    never a promise that a token comes.</p>
+    <dl class="stats" id="stats"></dl>
+  </div>
+</header>
+<main class="wrap" id="board" tabindex="-1" aria-busy="true"></main>
+<footer class="wrap foot">
+  <p>Data: a sealed DefiLlama snapshot, fetched once and never updated. A protocol
+  &ldquo;records no token&rdquo; when DefiLlama carries no market cap, CoinGecko id or
+  symbol for it &mdash; that is the record, not proof it has none. Nothing here is
+  investment advice; farming costs real money and a launch may never happen.</p>
+</footer>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
